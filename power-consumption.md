@@ -18,7 +18,7 @@
   - Mosfet
     - 0.004a @ 12.14V - 0.008 @ 5.1V
   
-This shows that the mechanical consumes more than solid-state and mosfet while triggered and does not work trigger with a 5V power source.
+This shows that the mechanical consumes more than solid-state and mosfet while triggered and does not trigger with a 5V power source.
 
 ## No load triggered resistance
   - Solid-state
