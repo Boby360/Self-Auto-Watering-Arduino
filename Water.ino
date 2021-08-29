@@ -3,6 +3,9 @@
   //Analog or Digital method
   const int analog = 1;
 
+  //Plant count count
+  const int plants = 1;
+  
   //Analog values
   const int dry = 300; // Lower this value until your plant is watered when dry.
 
@@ -18,28 +21,33 @@ void setup() {
   Serial.begin(9600);
   digitalWrite(pumpPin, HIGH);
   delay(5000); //5 seconds
-if (analog ==1){
+  
+  if (analog ==1){
     pinMode(soilSensor, INPUT);
-}
+    }
 }
 
 void loop() {
-  // Check current moisture
-  int moisture = analogRead(soilSensor);
-  delay(5000); //5 seconds
   
-if (analog == 1){
-  if (moisture >= dry) {
-    //Soil is dry
-    digitalWrite(pumpPin, LOW);//Triggering pump
+  for(int count = 0; count >= plants; count++){ //Future code for multiple plant support
+  // Check current moisture
+    int moisture = analogRead(soilSensor);
+    delay(5000); //5 seconds
 
-    //Water for 5 seconds
-    delay(5000);
+      if (analog == 1){
+        if (moisture >= dry) {
+          //Soil is dry
+          digitalWrite(pumpPin, LOW);//Triggering pump
 
-    //Turn off pump
-    digitalWrite(pumpPin, HIGH);
-    
-  }
-delay(3,600,000UL)//4 hours
+          //Water for 5 seconds
+          delay(5000);
+
+          //Turn off pump
+          digitalWrite(pumpPin, HIGH);
+
+        }
+    }
 }
+  delay(3600000UL); //4 hours
+
 }
