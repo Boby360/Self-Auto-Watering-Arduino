@@ -19,5 +19,4 @@ An automated arduino watering system will monitor the moisture in a planter pot.
 
 
 ## Todo:
-Write initial code
 Test the performance for a full year to figure out the shortfalls.
