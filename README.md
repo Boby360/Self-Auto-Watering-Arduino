@@ -9,12 +9,13 @@ To have a completely self-sustained automated watering system so you never need 
 An automated arduino watering system will monitor the moisture in a planter pot. When the moisture gets below a set level, the water pump will be triggerd. This will pump use collected rain water in a jug (or manually filled). A tube from the planter pot can be used to collect exess water if filters are in place. The system will be powered via a battery pack that is recharged via solar and/or wind generators.
 
 ## What is required: (Add model numbers/links)
-- Arduino Nano
-- Moisture sensors
-- Water pumps
-- Battery pack that has passthrough charging (Using recycled 18650 cells is a plus)
-- Arduino supported Relay (5v GPIO) (I have data comparing different ones)
-- Solar and/or wind generation (Ideally something that is native 5V and not stepped down)
+- [Arduino Nano](https://store-usa.arduino.cc/products/arduino-nano?selectedStore=us)
+- Moisture sensors (FC-28 works, others may work as well)
+- Water pumps (Any 5v will do, although note the OD for hose)
+- Water hose
+- Battery pack that has passthrough charging (Soshine e4s is one, although uses 18650 cells)
+- Arduino supported Relay (5v GPIO) (See [power-consumption.md](https://github.com/Boby360/Self-Auto-Watering-Arduino/blob/main/power-consumption.md) for suggestions)
+- Solar and/or wind generation (Something that is native 5V and not stepped down)
 
 
 
