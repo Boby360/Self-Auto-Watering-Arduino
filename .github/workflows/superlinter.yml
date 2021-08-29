@@ -1,0 +1,19 @@
+name: Super-Linter
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Running Tests
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: run Super-Linter
+      uses: github/super-linter@v3
+      env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
