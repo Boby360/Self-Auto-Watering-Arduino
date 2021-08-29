@@ -1,3 +1,4 @@
+![Build](https://github.com/Boby360/Self-Auto-Watering-Arduino/actions/workflows/superlinter.yml/badge.svg)
 # Self-sustained Automated Watering Arduino system
 The goal for this project is to have a self-sustained and automated watering system using an Arduino Nano.
 This involves having a heavily optimized automated watering system for minimal power consumption so it can be used in combination with renewable power generation, such as solar or wind.
