@@ -1,3 +1,11 @@
+# Arduino
+  - Power consumption will vary depending on the version of arduino, as well as who makes it.
+  - The long chip on the bottom(expand on this later) often dictates the power consumption between the same model.
+  - As the goal is to acheive the lowest possible power consumption, an official version is suggested.
+  - I have a few different chinese clones, and used the most efficient one.
+  - Idling at 0.009a with nothing plugged in and low power mode code enabled.
+
+
 # Relays
 ## Passive consumption
   - Mechanical
@@ -29,3 +37,9 @@ This shows that the mechanical consumes more than solid-state and mosfet while t
 This shows very low resistance with the mosfet while no load is applied.
 
 Mosfet should be the ideal candidate.
+
+# Moisture Sensor
+  - FC-28
+    - 0.004a @ 5.1V no trigger
+    - 0.008a @ 5.1V digital trigger
+    - Need to verify analog trigger consumption
